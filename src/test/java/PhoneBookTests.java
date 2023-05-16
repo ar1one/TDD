@@ -8,12 +8,12 @@ public class PhoneBookTests {
     PhoneBook pb = null;
 
     @BeforeEach
-    public void before(){
+    public void before() {
         pb = new PhoneBook();
     }
 
     @AfterEach
-    public void after(){
+    public void after() {
         pb = null;
     }
 
@@ -32,12 +32,13 @@ public class PhoneBookTests {
         pb.add(name, number);
         Assertions.assertEquals(name, pb.findNumber(number));
     }
+
     @Test
     public void findByName() {
         String name = "Frank";
         String number = "8800555355";
         pb.add(name, number);
-        Assertions.assertEquals(number, pb.findByName(number));
+        Assertions.assertEquals(number, pb.findByName(name));
     }
 
 //    findByName — найти номер по имени без полного перебора;
