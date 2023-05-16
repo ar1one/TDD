@@ -19,5 +19,9 @@ public class PhoneBook {
         return null;
     }
 
+    public String findByName(String name) {
+        return null;
+
+    }
 
 }
