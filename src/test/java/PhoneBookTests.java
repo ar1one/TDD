@@ -1,5 +1,7 @@
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import ru.netology.PhoneBook;
 
 public class PhoneBookTests {
@@ -15,5 +17,17 @@ public class PhoneBookTests {
         pb = null;
     }
 
+    @Test
+    public void addTest() {
+        String name = "user1";
+        String number = "123456";
+        int expected = 1;
+        Assertions.assertEquals(expected, pb.add(name, number));
+    }
+    /*
+    add — добавить имя с номером.
+    Метод должен возвращать количество контактов после добавления,
+    при этом гарантируется, что не будут добавляться повторяющиеся имена;
+     */
 
 }
