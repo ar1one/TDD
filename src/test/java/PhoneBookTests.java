@@ -25,5 +25,14 @@ public class PhoneBookTests {
         Assertions.assertEquals(expected, pb.add(name, number));
     }
 
+    @Test
+    public void findNumberTest() {
+        String name = "Frank";
+        String number = "88005553535";
+        pb.add(name, number);
+        Assertions.assertEquals(name, pb.findNumber(number));
+    }
+
+//    findByNumber — найти имя по номеру без полного перебора;
 
 }

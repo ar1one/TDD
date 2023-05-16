@@ -10,6 +10,11 @@ public class PhoneBook {
         return map.size();
     }
 
+//    findByNumber — найти имя по номеру без полного перебора;
+
+    public String findNumber(String number) {
+        return null;
+    }
 
 
 }
