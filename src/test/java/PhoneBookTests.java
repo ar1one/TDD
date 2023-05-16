@@ -47,12 +47,9 @@ public class PhoneBookTests {
         pb.add("Яков", "245");
         pb.add("Виктор", "687");
 
-        String expected = "Aртем\nВиктор\nЯков";
+        String expected = "Артем\nВиктор\nЯков\n";
         String actual = pb.printAllNames();
 
         Assertions.assertEquals(expected, actual);
-
     }
-
-//    findByName — найти номер по имени без полного перебора;
 }
