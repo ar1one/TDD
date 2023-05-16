@@ -34,11 +34,24 @@ public class PhoneBookTests {
     }
 
     @Test
-    public void findByName() {
+    public void findByNameTest() {
         String name = "Frank";
         String number = "8800555355";
         pb.add(name, number);
         Assertions.assertEquals(number, pb.findByName(name));
+    }
+
+    @Test
+    public void printAllNamesTest() {
+        pb.add("Артем", "123");
+        pb.add("Яков", "245");
+        pb.add("Виктор", "687");
+
+        String expected = "Aртем\nВиктор\nЯков";
+        String actual = pb.printAllNames();
+
+        Assertions.assertEquals(expected, actual);
+
     }
 
 //    findByName — найти номер по имени без полного перебора;
