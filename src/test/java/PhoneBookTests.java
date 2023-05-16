@@ -24,10 +24,6 @@ public class PhoneBookTests {
         int expected = 1;
         Assertions.assertEquals(expected, pb.add(name, number));
     }
-    /*
-    add — добавить имя с номером.
-    Метод должен возвращать количество контактов после добавления,
-    при этом гарантируется, что не будут добавляться повторяющиеся имена;
-     */
+
 
 }

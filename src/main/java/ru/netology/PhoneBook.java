@@ -1,7 +1,15 @@
 package ru.netology;
 
+import java.util.Map;
+import java.util.TreeMap;
+
 public class PhoneBook {
+    private Map<String, String> map = new TreeMap<>();
     public int add(String name, String number) {
-        return 0;
+        map.put(name, number);
+        return map.size();
     }
+
+
+
 }
